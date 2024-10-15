@@ -9,7 +9,7 @@ const MongoClient = require('mongodb').MongoClient
 const ObjectID = require('mongodb').ObjectID;
 
 
-const connectionString = 'mongodb+srv://letrungmin:02112003@letrungmin-1644.lq577qb.mongodb.net/'
+const connectionString = 'mongodb+srv://haotvgcs:21072003@cluster0.vexus.mongodb.net/'
 
 // (0) CONNECT: server -> connect -> MongoDB Atlas 
 MongoClient.connect(connectionString, { useUnifiedTopology: true })
@@ -74,11 +74,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         .catch(error => console.error(error))
 })
     // Start the server
-    app.listen(3000, () => {
-    console.log('Server is running on port 3000');
+    app.listen(3500, () => {
+    console.log('Server is running on port 3500');
     })
 });
-
-
-
-
